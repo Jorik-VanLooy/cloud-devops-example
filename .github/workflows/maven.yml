@@ -36,6 +36,9 @@ jobs:
       uses: docker/setup-qemu-action@v3
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
+    - name: check folder
+      run: ls -la
+
     - name: Build and pushus
       uses: docker/build-push-action@v6
       with:
