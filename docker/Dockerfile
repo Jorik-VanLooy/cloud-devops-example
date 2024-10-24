@@ -1,5 +1,5 @@
 FROM amazoncorretto:8-al2023
 
-ADD target .
+ADD ../target .
 
 ENTRYPOINT [ "java", "-jar", "target/*.jar" ]
